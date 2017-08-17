@@ -1,17 +1,27 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Spritti</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content class="home">
+
+  <ion-card (click)="goToVehicleDetail()">
+    <ion-card-header>
+      VW Golf GTI
+    </ion-card-header>
+    <img src="../../assets/images/vw-golf-gti.png" alt="VW Golf GTI" />
+    <ion-card-content>
+      <p>
+        Volkswagen Golf GTI (BJ: 2016 / PS: 220 / KW: 162)
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- <ion-list>
+    <ion-item *ngFor="let fuel of fuelList">
+      {{fuel.mileage}}
+    </ion-item> 
+  </ion-list> -->
+
 </ion-content>
